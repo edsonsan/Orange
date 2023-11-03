@@ -1,0 +1,96 @@
+//// Tela Login
+
+	** Campo usuário XPath:
+		//input[@id='txtUsername']
+
+	** Campo Senha XPath:
+		//input[@id='txtPassword']
+
+	** Botão Login XPath:
+		//input[@id='btnLogin']
+
+	** Password Vazio XPath
+		//span[@id='spanMessage']
+		Texto: Password cannot be empty
+
+	** Usuário / Password Inválido XPath
+		//span[@id='spanMessage']
+		Texto: Invalid credentials
+
+	** Link Forgot your passaword?
+		//a[contains(text(),'Forgot your password?')]
+		https://opensource-demo.orangehrmlive.com/index.php/auth/requestPasswordResetCode
+		ou /index.php/auth/requestPasswordResetCode
+		//h1[contains(text(),'Forgot Your Password?')]
+
+//// Tela Principal - Pós Login
+	** Link principal para Dashboard XPath
+		//h1[contains(text(),'Dashboard')]
+	** Link direto da LI Admin/Usuario Management XPath
+		//a[@id='menu_admin_UserManagement'] ou
+		//b[contains(text(),'Admin')]
+
+//// Tela User Management - System Users 
+
+	- Seção de Busca
+		** Identificador da página XPath
+			//h1[contains(text(),'System Users')]
+		** Usename XPath
+			//input[@id='searchSystemUser_userName']
+
+		** User Role - Select - XPath
+			//select[@id='searchSystemUser_userType']
+				Values
+					0 = All
+					1 = Admin
+					2 = ESS
+
+		** Employee Name XPath
+			//input[@id='searchSystemUser_employeeName_empName']
+
+		** Status - Select - Xpath
+			//select[@id='searchSystemUser_status']
+				Values
+					Default = All
+					0 = Disabled
+					1 = Enabled
+
+		** Botão Search XPath
+			//input[@id='searchBtn']
+
+		** Botão Reset - XPath
+			//input[@id='resetBtn']
+	
+	- Seção de Adição Exclusão e Visualização (Busca)
+		** Botão Add XPath
+			//input[@id='btnAdd']
+	
+		** Botão Delete XPath
+			//input[@id='btnDelete']
+		
+		** Tabela de REsultado XPath
+			//table[@id='resultTable']
+		
+		** Check Box das linhas XPath (Linhas dinâmicas dever ser orientar pelo name e valor)
+			//input[@id='ohrmList_chkSelectRecord_46']
+				"<input type="checkbox" id="ohrmList_chkSelectRecord_46" name="chkSelectRow[]" value="46">"
+
+
+/// Tela Add User (Login) - https://opensource-demo.orangehrmlive.com/index.php/admin/saveSystemUser
+	** Campo Employee Name* XPath
+		//input[@id='systemUser_employeeName_empName']
+	
+	** Campo Username* XPath
+		//input[@id='systemUser_userName']
+		
+	** Campo Password* XPath
+		//input[@id='systemUser_password']
+		
+	** Campo Confirm Password* XPath
+		//input[@id='systemUser_confirmPassword']
+		
+	** Botão Save XPath
+		//input[@id='btnSave']
+	
+	** Após cadastro validar XPath
+		//a[contains(text(),'Edson')]

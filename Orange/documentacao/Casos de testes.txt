@@ -1,0 +1,14 @@
+**** Casos de Teste [Tela Login]
+	04 - Casos de Testes
+			CT01 - Login com sucesso => Será direcionado para a página de Dashboard (Principal)
+			CT02 - Login usuário inválido => Será exibida a mensagem "Invalid credencials"
+			CT03 - Login com sem senha => Será exibida a mensagem "Password cannot be empty"
+			CT04 - Click em "Forgot your password?" => Será direcionado para a página de troca de senha
+
+**** Casos de Teste [Tela User Management]	
+	05 - Casos de Testes
+			CT05 - Adicionar usuário de acesso (Que já esteja cadastrado em PIM/Add Employee)
+			CT06 - Realizar busca de usuário com status All
+			CT07 - Realizar busca de usuário com status Enabled
+			CT08 - Realizar busca de usuário com status Disabled			
+			CT09 - Deletar usuário de acesso
